@@ -1,0 +1,91 @@
+body {
+    background-color: gray;
+    padding: 0px;
+    margin: 0px;
+}
+.main {
+    max-width: 992px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0 20px;
+    width: 100%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    align-items: center;
+}
+.title{
+    background: no-repeat left 12px/50px url(./assets/img/logo.svg);
+    padding: 0 0 0 60px;
+    color: #555;
+}
+.search {
+    position: relative;
+}
+.img-search {
+    padding: 5px;
+    border-radius: 3px;
+    border:1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    transition: .4s;
+    width: 200px;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+.img-search:focus {
+    outline:none;
+    border:1px solid #ff7526;
+}
+.img-search:focus ~.icon-close {
+    opacity: 1;
+}
+.icon-close {
+    position:absolute;
+    right: 3px;
+    top:3px;
+    cursor:pointer;
+    opacity: 0;
+    transition: .4s;
+}
+.gallery {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.image {
+    width: 32%;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+.footer {
+    display: flex;
+    padding: 19px 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+}
+.footer-link {
+    position: relative;
+    top: 4px;
+}
+.rsschool,
+.footer-link svg {
+    fill:#333
+}
+@media (max-width: 768px) {
+    .image {
+        width: 48%;
+    }
+}
+@media (max-width: 576px) {
+    .header {
+        flex-wrap: wrap;
+    }
+}

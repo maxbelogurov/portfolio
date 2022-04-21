@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: no-repeat top center url(./assets/img/bg.jpg);
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+}
+.snake-game{
+    margin: 0 auto;
+    width: 840px;
+    margin-top: 20px;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:30px;
+    color:#fff;
+}
+.score,
+.speed,
+.board {
+    box-sizing: border-box;
+    padding: 15px 20px;
+    width: 30%;
+    height: 150px;
+    background: linear-gradient(45deg, #2a2a2a, #3a3a3a);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+.score-name {
+    text-align: center;
+}
+.score-count {
+    text-align: center;
+    padding-top: 10px;
+}
+.score-timeline {
+    background: #4d4d4d;
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 20px;
+    position: relative;
+}
+.score-timeline::before {
+    content: '0';
+    font-size: 10px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.score-timeline::after {
+    content: '100';
+    font-size: 10px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.timeline {
+    height: 4px;
+    background-color: #f15a23;
+    border-radius: 2px;
+}
+.speed {
+    width: 250px;
+    background: no-repeat top center url(./assets/img/spidometer.png), linear-gradient(45deg, #2a2a2a, #3a3a3a);
+    position: relative;
+}
+.speed-name {
+    text-align: center;
+}
+.speed-arrow {
+    height: 4px;
+    width: 71px;
+    border-radius: 2px;
+    background-color: #21c01b;
+    box-shadow: 0 0 2px #117d0d;
+    position: absolute;
+    bottom: 25px;
+    right: 50%;
+    transform-origin: 100% 50%;
+    transition: 0.3s;
+}
+.board-name {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.board p {
+    text-align: center;
+    font-size: 18px;
+    margin: 5px;
+    color: #8e8e8e;
+}
+.board-result-score {
+    color: #f15a23;
+}
+.board-result-speed {
+    color: #21c01b;
+}
+.alert-box {
+    position: absolute;
+    color:#fff;
+    top: 300px;
+    width: 270px;
+    left: calc((100% - 270px) /2);
+    font-size:16px;
+    padding-left: 50px;
+    background: no-repeat left center/34px url(./assets/img/arrows.png);
+    animation: blink 1.5s linear infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    51% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.alert-box.hidden {
+    opacity: 0;
+    animation: 1.5s;
+}
+.game-zone {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+.modal {
+    display: none;
+    opacity: 0;
+}
+.modal.active {
+    position: absolute;
+    display: block;
+    opacity: 1;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-over {
+    width: 280px;
+    background-color: crimson;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.game-over__title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 10px;
+    margin-bottom: 0;
+}
+#start {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 20px;
+    color: #fff;
+    background: #21c01b;
+    transition: .3s;
+}
+#start:hover {
+    background-color: #117d0d;
+    transition: .3s;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color:#ccc;
+}
+.footer-link {
+    top: 3px;
+    position: relative;
+}
+.footer-link svg {
+    fill:#ccc;
+}
