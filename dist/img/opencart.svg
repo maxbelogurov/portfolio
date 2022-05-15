@@ -1,0 +1,8 @@
+export default {
+      id: "opencart-usage",
+      viewBox: "0 0 400 78",
+      url: "/" + "D:\\Portfolio\\portfolio\\src\\svg\\skills\\opencart.svg",
+      toString: function () {
+        return this.url;
+      }
+    }

@@ -1,0 +1,8 @@
+export default {
+      id: "joomla-usage",
+      viewBox: "0 0 256 258",
+      url: "/" + "D:\\Portfolio\\portfolio\\src\\svg\\skills\\joomla.svg",
+      toString: function () {
+        return this.url;
+      }
+    }

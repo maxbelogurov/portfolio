@@ -1,0 +1,8 @@
+export default {
+      id: "javascript-usage",
+      viewBox: "0 0 1052 1052",
+      url: "/" + "D:\\Portfolio\\portfolio\\src\\svg\\skills\\javascript.svg",
+      toString: function () {
+        return this.url;
+      }
+    }

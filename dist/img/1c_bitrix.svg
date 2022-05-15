@@ -1,0 +1,8 @@
+export default {
+      id: "1c_bitrix-usage",
+      viewBox: "0 0 344 67",
+      url: "/" + "D:\\Portfolio\\portfolio\\src\\svg\\skills\\1c_bitrix.svg",
+      toString: function () {
+        return this.url;
+      }
+    }

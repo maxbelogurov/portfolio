@@ -1,0 +1,8 @@
+export default {
+      id: "webpack-usage",
+      viewBox: "0 0 1200 1200",
+      url: "/" + "D:\\Portfolio\\portfolio\\src\\svg\\skills\\webpack.svg",
+      toString: function () {
+        return this.url;
+      }
+    }

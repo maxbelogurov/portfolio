@@ -1,0 +1,8 @@
+export default {
+      id: "sass-usage",
+      viewBox: "0 0 512 384",
+      url: "/" + "D:\\Portfolio\\portfolio\\src\\svg\\skills\\sass.svg",
+      toString: function () {
+        return this.url;
+      }
+    }

@@ -1,0 +1,8 @@
+export default {
+      id: "bootstrap5-usage",
+      viewBox: "0 0 512 407.864",
+      url: "/" + "D:\\Portfolio\\portfolio\\src\\svg\\skills\\bootstrap5.svg",
+      toString: function () {
+        return this.url;
+      }
+    }

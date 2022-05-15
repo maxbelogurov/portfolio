@@ -1,0 +1,8 @@
+export default {
+      id: "github-usage",
+      viewBox: "0 0 256 249",
+      url: "/" + "D:\\Portfolio\\portfolio\\src\\svg\\skills\\github.svg",
+      toString: function () {
+        return this.url;
+      }
+    }

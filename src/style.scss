@@ -1,4 +1,23 @@
-$color-max: #3a494f;
+$color__dark-blue: #3a494f;
 body {
-  color:$color-max;
+  color:$color__dark-blue;
+}
+.btn:focus,
+.btn:active:focus{
+  box-shadow: none !important;
+}
+.btn:focus-visible {
+  outline: none;
+}
+.layout__logo-img {
+  height: 3.5rem;
+}
+.design__link {
+  margin-bottom: 1.5rem;
+}
+.img-thumbnail {
+  transition: .5s;
+}
+.design__link:hover .img-thumbnail {
+  box-shadow:  0 .5rem 1rem rgba(0,0,0,.3);
 }

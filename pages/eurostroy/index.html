@@ -1,0 +1,1406 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#cccccc">
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Rubik:300" rel="stylesheet">
+	<style>
+body{font-family:'Rubik', sans-serif;}
+button,button:active,button:focus,a:active,a:focus{outline:none !important;}
+.nav-link{color:rgba(255,255,255,.75) !important;}
+.nav-link:hover{color: rgba(255,255,255,1) !important;}
+.phone{color:#f96332 !important;font-size:1.2rem;padding:0rem;}
+.bg-dark{background-color:rgba(51,51,51,.95) !important;}
+#home{background-image:url(img/bg_home.jpg);background-position:50% 30%;background-size:cover;height:50vh;max-height:400px;color:#fff;padding-top:5rem;}
+#home h1{text-shadow:1px 1px 20px #000;}
+.btn-orange{color: #eee;background-color: #f96332;border-color: #f45e2d;font-weight:bold;}
+.btn-orange:hover,
+.btn-orange:focus{box-shadow:0 3px 8px 0 rgba(0,0,0,.4);color:#fff;background-color:#f45e2d;}
+.b-title{font-family:'Lora',serif;color:#333;font-size:2rem;display:block;text-align:center;margin:2rem 0;}
+.b-text{color:#555;display:block;text-align:center;}
+.icon svg{-webkit-transition:.2s linear;transition:.2s linear;top:0px;position:relative}
+.icon-name{font-size:1.5rem;margin-top:1rem;-webkit-transition:.2s linear;transition:.2s linear}
+.icon-text{font-size:1rem;color:#999;}
+.ukladka:hover .icon svg{-webkit-transition:.2s linear;transition:.2s linear;top:-7px;}
+.quality:hover .icon-name{color:#f96332}
+.diamond:hover .icon-name{color:#2ca8ff}
+.shield:hover .icon-name{color:#18ce0f}
+.quality .icon svg{fill:#f96332}
+.diamond .icon svg{fill:#2ca8ff}
+.shield .icon svg{fill:#18ce0f}
+.product{border:none;-webkit-transition:.2s linear;transition:.2s linear;}
+.card-img-top{padding:0 1rem;}
+.card-body{padding:1rem 0.5rem 0.5rem;}
+.card-title{font-size:1.3rem;margin-bottom:1rem;}
+.card-text{color:#999;font-size:0.9rem;-webkit-transition:.2s linear;transition:.2s linear;position:relative;top:0;}
+.card-color{opacity:0;top:-20px;position:relative;height:0;-webkit-transition:.2s linear;transition:.2s linear;}
+.card-color img{border-radius:.25rem;}
+.card-price{color:#f96332;text-align:center;}
+.product:hover{cursor: pointer;box-shadow:0 3px 8px 0 rgba(0,0,0,.17);}
+.product:hover .card-text{opacity:0;top:-30px;}
+.product:hover .card-color{opacity:1;top:-50px}
+#calculator{background-image:url(img/bg_calc.jpg);background-position:100%;background-size:cover;  }
+#calculator .b-title{color:#fff;}
+.calc-title{font-size:1.3rem;margin:1rem 0;color:#fff;}
+#calculator .tile{background: #fff;border-radius:.25rem;opacity:0.8;-webkit-transition:.2s linear;transition:.2s linear;border:2px solid #fff;padding:0.5rem;}
+#calculator .color{border-radius:.25rem;opacity:0.8;padding:0.5rem;background-color: #fff;-webkit-transition:.2s linear;transition:.2s linear;border:2px solid #fff;}
+#calculator .tile:hover,
+#calculator .color:hover{opacity:1;-webkit-transition:.2s linear;transition:.2s linear;border-color:#ddd;cursor:pointer;}
+#calculator .tile.frame,
+#calculator .color.frame{border-color:#f96332;opacity:1 !important;}
+#calculator input#sqrt{padding:1rem;width:80px;border-radius:.25rem;border:none;opacity:0.8;}
+#calculator .info{background: #ccc;padding: 0.03rem .5rem;color:#fff;border-radius: 50%;}
+#calculator .dopuslugi{padding:1rem;border-radius:.25rem;background-color: #fff;opacity:0.8;}
+input[type='number']{-moz-appearance:textfield;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{-webkit-appearance: none;}
+input:focus::-webkit-input-placeholder{ color:transparent; }
+input:focus:-moz-placeholder{ color:transparent; }
+input:focus::-moz-placeholder{ color:transparent; }
+input:focus:-ms-input-placeholder{ color:transparent; }
+#calculator .itog{border-top:2px solid #fff;}
+#calculator .sum{font-size:2rem;color:#fff;}
+.table td{vertical-align:50%;}
+#contacts{background-image:url(img/bg_contacts.jpg);background-position:bottom;background-size:cover;  color:#eee;}
+#contacts .b-title{color:#fff;}
+address p.h4{margin:0 0 1rem 0;color:#f96332}
+address p{margin:0 0 .5rem 2.65rem;}
+address svg{fill:#f96332;}
+address a{color:#eee;}
+address a:hover{color:#f96332;text-decoration:none;}
+.footer{font-size:0.8rem;color:#999;line-height:0.9rem;text-align:justify;}
+.copyright a{color:#f96332;text-decoration:none;}
+#portfolio .container-fluid .portfolio-box{position: relative;display: block;}
+#portfolio .container .portfolio-box .portfolio-box-caption{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;height:100%;position:absolute;bottom:0;text-align:center;opacity:0;color:#fff;background:rgba(244, 98, 58, 0.5);-webkit-transition:opacity 0.25s ease;transition:opacity 0.25s ease;text-align:center}
+#portfolio .container .portfolio-box .portfolio-box-caption .project-name{font-size:1.2rem}
+#portfolio .container .portfolio-box:hover .portfolio-box-caption{opacity:1}
+.note p {color:#18ce0f;font-weight:bold;}
+.btn-opd{padding:0;border-bottom: 1px dashed #ccc;}
+.btn-opd:hover{color:#f96332 !important;cursor:pointer; border-bottom: 1px dashed #f96332;}
+@media only screen and (max-width: 770px){
+#home{height:100vh;max-height:100vh;}}
+@media only screen and (max-height: 630px){
+#home{height:100vh;max-height:100vh;}}
+@media only screen and (max-width: 576px){
+.product{box-shadow: 0 3px 8px 0 rgba(0,0,0,.17);}
+.card-body{padding:0.5rem 0.2rem;}
+.card-title{font-size:1.1rem;}
+.card-color,.card-text{display:none}
+.product:hover .card-text{display:none;}}	
+	</style>
+
+    <title>Еврострой - производство и укладка тротуарной плитки в Калининграде</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/32.png">
+	<link rel="mask-icon" href="favicon/brick.svg" color="#777">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+    <a class="navbar-brand nav-js" href="#home">Еврострой</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+				<li class="nav-item">
+					<a class="nav-link nav-js" href="#catalog">Каталог</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-js" href="#calculator">Стоимость</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-js" href="#ukladka">Наши работы</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-js" href="#contacts">Контакты</a>
+				</li>
+            </ul>
+            <ul class="navbar-nav l-auto">
+				<li class="nav-item">
+					<a class="nav-link phone" href="tel:+74012379060">8 (4012) 37-90-60</a>  
+				</li>
+            </ul>
+        </div>
+	</div>
+	</nav>
+	
+	<div id="home">
+		<div class="container text-center pt-5">
+			<h1 class="display-5 mb-5">Производство тротуарной плитки <br> в Калининграде</h1>
+			<a class="btn btn-orange" href="#calculator" role="button">Рассчитать стоимость</a>
+		</div>
+    </div>
+	
+	
+	<!----------------------------------------------------------- КАТАЛОГ ----------------------------------------------->
+	<div id="catalog" class="container mt-5 mb-5">
+		<div class="row justify-content-center pt-4">
+			<div class="col-12 col-md-8 mb-5">
+				<span class="b-title">Каталог продукции</span>
+				<p class="b-text">Тротуарная плитка и бордюрный камень, созданные нашей командой по уникальной рецептуре, обладают европейским качеством и традиционным стилем.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6 col-md-3 mb-4">
+				<div class="card product" data-toggle="modal" data-target="#kirpich6">
+					<img src="img/kirpich_grey6.jpg" class="card-img-top" alt="Тротуарная плитка Кирпич, 60мм">
+					<div class="card-body">
+						<h5 class="card-title text-center">Плитка "Кирпич" 6см</h5>
+						<p class="card-text text-center">Марка бетона: M300-B22.5<br>Размеры: 200х100х60 мм</p>
+						<div class="card-color row no-gutters justify-content-around mb-2">
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/grey.jpg" title="310 р."> </div>
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/red.jpg" title="380 р."> </div>
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/black.jpg" title="400 р."> </div>
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/yellow.jpg" title="450 р."> </div>
+						</div>
+						<div class="card-price mt-3 mt-sm-0">310 ₽</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-3 mb-4">
+				<div class="card product" data-toggle="modal" data-target="#kirpich8">
+					<img src="img/kirpich_grey8.jpg" class="card-img-top" alt="Тротуарная плитка Кирпич, 80мм">
+					<div class="card-body">
+						<h5 class="card-title text-center">Плитка "Кирпич" 8см</h5>
+						<p class="card-text text-center">Марка бетона: M300-B22.5<br>Размеры: 200х100х80 мм</p>
+						<div class="card-color row no-gutters justify-content-around mb-2">
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/grey.jpg" title="380 р."> </div>
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/red.jpg" title="460 р."> </div>
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/black.jpg" title="480 р."> </div>
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/yellow.jpg" title="550 р."> </div>
+						</div>
+						<div class="card-price mt-3 mt-sm-0">380 ₽</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-3 mb-4">
+				<div class="card product" data-toggle="modal" data-target="#kirpich10">
+					<img src="img/kirpich_grey10.jpg" class="card-img-top" alt="Тротуарная плитка Кирпич, 100мм">
+					<div class="card-body">
+						<h5 class="card-title text-center">Плитка "Кирпич" 10см</h5>
+						<p class="card-text text-center">Марка бетона: M300-B22.5<br>Размеры: 200х100х100 мм</p>
+						<div class="card-color row no-gutters justify-content-around mb-2">
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/grey.jpg" title="470 р."> </div>
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/red.jpg" title="580 р."> </div>
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/black.jpg" title="600 р."> </div>
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/yellow.jpg" title="670 р."> </div>
+						</div>
+						<div class="card-price mt-3 mt-sm-0">470 ₽</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-3 mb-4">
+				<div class="card product" data-toggle="modal" data-target="#katushka6">
+					<img src="img/katushka_grey6.jpg" class="card-img-top" alt="Тротуарная плитка Катушка, 60мм">
+					<div class="card-body">
+						<h5 class="card-title text-center">Плитка "Катушка" 6см</h5>
+						<p class="card-text text-center">Марка бетона: M300-B22.5<br>Размеры: 250х150х60 мм</p>
+						<div class="card-color row no-gutters justify-content-around mb-2">
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/grey.jpg" title="330 р."> </div>
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/red.jpg" title="400 р."> </div>
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/black.jpg" title="420 р."> </div>
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/yellow.jpg" title="470 р."> </div>
+						</div>
+						<div class="card-price mt-3 mt-sm-0">330 ₽</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-3 mb-4">
+				<div class="card product" data-toggle="modal" data-target="#gorod6">
+					<img src="img/staryi-gorod.jpg" class="card-img-top" alt="Тротуарная плитка Старый город, 60мм">
+					<div class="card-body">
+						<h5 class="card-title text-center">"Старый город" 6см</h5>
+						<p class="card-text text-center">Марка бетона: M300-B22.5<br>Размеры: 180х120х60 мм</p>
+						<div class="card-color row no-gutters justify-content-around mb-2">
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/grey.jpg" title="340 р."> </div>
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/red.jpg" title="410 р."> </div>
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/black.jpg" title="430 р."> </div>
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/yellow.jpg" title="480 р."> </div>
+						</div>
+						<div class="card-price mt-3 mt-sm-0">340 ₽</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-3 mb-4">
+				<div class="card product" data-toggle="modal" data-target="#porebrik">
+					<img src="img/porebrik.jpg" class="card-img-top" alt="Поребрик тротуарный">
+					<div class="card-body">
+						<h5 class="card-title text-center">Поребрик тротуар. 8см</h5>
+						<p class="card-text text-center">Марка бетона: M300-B22.5<br>Размеры: 1000х200х80 мм</p>
+						<div class="card-color row no-gutters justify-content-around mb-2">
+								<div class="col-2"></div>
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/grey.jpg" title="160 р."> </div>
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/red.jpg" title="200 р."> </div>
+								<div class="col-2"></div>
+						</div>
+						<div class="card-price mt-3 mt-sm-0">160 ₽</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-3 mb-4">
+				<div class="card product" data-toggle="modal" data-target="#bordur15">
+					<img src="img/bordur.jpg" class="card-img-top" alt="Бордюр дорожный, 150мм">
+					<div class="card-body">
+						<h5 class="card-title text-center">Бордюр дорожный 15см</h5>
+						<p class="card-text text-center">Марка бетона: M300-B22.5<br>Размеры: 1000х300х150 мм</p>
+						<div class="card-color row no-gutters justify-content-around mb-2">
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/grey.jpg" title="280 р."> </div>
+						</div>
+						<div class="card-price mt-3 mt-sm-0">280 ₽</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-3 mb-4">
+				<div class="card product" data-toggle="modal" data-target="#bordur18">
+					<img src="img/bordur.jpg" class="card-img-top" alt="Бордюр дорожный, 180мм">
+					<div class="card-body">
+						<h5 class="card-title text-center">Бордюр дорожный 18см</h5>
+						<p class="card-text text-center">Марка бетона: M300-B22.5<br>Размеры: 1000х300х180 мм</p>
+						<div class="card-color row no-gutters justify-content-around mb-2">
+								<div class="col-2"><img class="img-fluid" data-toggle="tooltip" src="img/grey.jpg" title="360 р."> </div>
+						</div>
+						<div class="card-price mt-3 mt-sm-0">360 ₽</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<!----------------------------------------------------------- РАСЧЕТ ----------------------------------------------->
+	<div id="calculator" class="pt-4 mt-5 pb-5">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-8">
+				<span class="b-title">Расчет стоимости тротуарной плитки</span>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-5">
+				<div class="calc-title">Выберите плитку</div>
+				<div class="row justify-content-center justify-content-lg-start tile-choise">
+				  <div class="col-4 col-sm-4 col-lg-4 text-center mb-3">
+                    <div class="tile" id="brick_60" onclick="tileChoise(tiles.brick_60)">
+						<img src="img/kirpich_grey6.jpg" class="img-fluid" alt="Тротуарная плитка Кирпич, 6см"> 
+						<p>Кирпич 6см</p>
+					</div>
+				  </div>
+				  <div class="col-4 col-md-4 col-lg-4 text-center mb-3">
+					<div class="tile" id="brick_80" onclick="tileChoise(tiles.brick_80)">
+						<img src="img/kirpich_grey8.jpg" class="img-fluid" alt="Тротуарная плитка Кирпич, 8см"> 
+						<p>Кирпич 8см</p>
+					</div>
+				  </div>
+				  <div class="col-4 col-md-4 col-lg-4 text-center mb-3">
+					<div class="tile" id="brick_100" onclick="tileChoise(tiles.brick_100)">
+						<img src="img/kirpich_grey10.jpg" class="img-fluid" alt="Тротуарная плитка Кирпич, 10см"> 
+						<p>Кирпич 10см</p>
+					</div>
+				  </div>
+				  <div class="col-4 col-md-3 col-lg-4 text-center mb-3">
+					<div class="tile" id="reel_60" onclick="tileChoise(tiles.reel_60)">
+						<img src="img/katushka_grey6.jpg" class="img-fluid" alt="Тротуарная плитка Катушка, 6см"> 
+						<p>Катушка 6см</p>
+					</div>
+				  </div>
+				  <div class="col-4 col-md-3 col-lg-4 text-center mb-3">
+					<div class="tile" id="old_town_60" onclick="tileChoise(tiles.old_town_60)">
+						<img src="img/staryi-gorod.jpg" class="img-fluid" alt="Тротуарная плитка Старый город, 6см"> 
+						<p>Старый город</p>
+					</div>
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-12 col-lg-2 offset-md-1">
+				    <div class="calc-title">Выберите цвет</div>
+                    <div class="row justify-content-center color-choise">
+						<div class="col-6 col-lg-12 mb-3">
+                          <div class="color" id="grey" onclick="colorChoise(colors.grey)"><img width="43px" src="img/grey.jpg"> Серый</div>
+						</div>
+						<div class="col-6 col-lg-12 mb-3">
+                          <div class="color" id="red" onclick="colorChoise(colors.red)"><img width="43px" src="img/red.jpg"> Красный</div>
+						</div>
+						<div class="col-6 col-lg-12 mb-3"> 
+                          <div class="color" id="black" onclick="colorChoise(colors.black)"><img width="43px" src="img/black.jpg"> Черный</div>
+						</div>
+						<div class="col-6 col-lg-12 mb-3">
+                          <div class="color" id="yellow" onclick="colorChoise(colors.yellow)"><img width="43px" src="img/yellow.jpg"> Желтый</div>
+						</div>
+                    </div>
+			</div>
+			
+			<div class="col-12 col-sm-6 col-lg-3 offset-md-1">
+				<div class="calc-title">Укажите площадь, м<sup>2</sup></div>
+				<input type="number" name="sqrt" id="sqrt" placeholder="20" onkeyup="sqrtChange()" onchange="sqrtChange()">
+					
+				<div class="calc-title mt-4 mt-sm-5">Дополнительно</div>
+                <div class="dopuslugi mb-5">
+					<label id="delivering">
+						<input type="checkbox" name="delivering" id="deliveringChekbox" onchange="toggle('delivering')"> Доставка
+					</label> <span class="info" data-toggle="tooltip" title="Манипулятором по Калининграду (до 14тонн)">i</span><br>
+					<label id="delivering">
+						<input type="checkbox" name="delivering" id="mountingChekbox" onchange="toggle('mounting')"> Укладка
+					</label> <span class="info" data-toggle="tooltip" title="С учетом стоимости материала для укладки">i</span>
+                </div>
+			</div>
+        </div>
+        
+		<div class="row itog mt-md-5">
+			<div class="col-12 col-sm-6 col-lg-3 offset-lg-6">
+                <div class="sum mt-4">Итого: <span id="sum">0</span> р.</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 text-center">
+				<a href="#callback" class="btn btn-orange btn-lg mt-5 mt-sm-4">Заказать плитку</a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!----------------------------------------------------------- УКЛАДКА ----------------------------------------------->
+	<div id="ukladka" class="pt-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<span class="b-title">Укладка тротуарной плитки</span>
+				<p class="b-text">Выполняем работы по благоустройству территорий, тротуаров, автостоянок, проездов.<br>Высокопрофессиональный коллектив готов взяться за работу любой сложности.</p>
+			</div>
+		</div>
+		<div class="row mt-3">
+			<div class="col-12 col-md-4 text-center mt-4 mb-4 ukladka quality">
+				<div class="icon">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 0 470 470" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 470 470">
+					  <g>
+						<path d="m429.591,418.378l-62.223-150.218c-1.585-3.826-5.972-5.645-9.799-4.059s-5.645,5.973-4.059,9.799l56.251,135.801-51.309-14.867c-3.368-0.977-6.965,0.513-8.656,3.586l-25.769,46.793-60.357-145.716c69.663-13.434 122.447-74.853 122.447-148.378 0.001-83.327-67.79-151.119-151.117-151.119s-151.119,67.792-151.119,151.119c0,33.751 11.124,64.951 29.896,90.133l-73.368,177.126c-1.103,2.664-0.582,5.724 1.341,7.872 1.922,2.148 4.907,3.004 7.676,2.202l60.533-17.541 30.4,55.207c1.324,2.403 3.847,3.882 6.568,3.882 0.138,0 0.277-0.004 0.416-0.011 2.879-0.16 5.411-1.955 6.515-4.619l58.136-140.353c1.585-3.827-0.232-8.214-4.059-9.799-3.827-1.585-8.214,0.232-9.799,4.059l-52.165,125.936-25.767-46.793c-1.692-3.073-5.291-4.563-8.657-3.586l-51.308,14.867 64.397-155.469c27.598,29.52 66.86,48.005 110.364,48.005 4.491,0 8.933-0.209 13.325-0.594l67.818,163.727c1.103,2.664 3.636,4.459 6.514,4.618 0.14,0.008 0.278,0.012 0.417,0.012 2.721,0 5.244-1.479 6.567-3.882l30.401-55.207 60.533,17.541c2.771,0.803 5.753-0.054 7.676-2.202 1.923-2.148 2.443-5.208 1.34-7.872zm-330.71-267.259c2.84217e-14-75.056 61.063-136.119 136.119-136.119 75.056,0 136.118,61.063 136.118,136.119s-61.062,136.118-136.118,136.118c-75.056,0-136.119-61.062-136.119-136.118z"/>
+						<path d="m321.659,122.961c-0.863-2.658-3.135-4.616-5.892-5.079l-50.467-8.469-23.649-45.379c-1.292-2.479-3.855-4.034-6.651-4.034-2.795,0-5.359,1.555-6.651,4.034l-23.65,45.379-50.466,8.469c-2.757,0.462-5.028,2.42-5.892,5.079-0.864,2.659-0.178,5.577 1.781,7.572l35.85,36.515-7.54,50.614c-0.412,2.765 0.748,5.529 3.01,7.173 2.26,1.642 5.249,1.891 7.751,0.646l45.807-22.812 45.806,22.812c1.059,0.527 2.203,0.787 3.343,0.787 1.557,0 3.104-0.484 4.409-1.432 2.262-1.644 3.422-4.408 3.01-7.173l-7.539-50.614 35.85-36.516c1.958-1.995 2.644-4.913 1.78-7.572zm-50.951,36.244c-1.648,1.679-2.413,4.033-2.066,6.359l5.97,40.074-36.268-18.061c-1.054-0.524-2.198-0.787-3.344-0.787-1.145,0-2.291,0.262-3.343,0.787l-36.268,18.061 5.97-40.074c0.347-2.326-0.418-4.681-2.066-6.359l-28.385-28.912 39.957-6.706c2.32-0.389 4.323-1.844 5.41-3.93l18.725-35.929 18.725,35.93c1.088,2.086 3.09,3.541 5.41,3.93l39.958,6.706-28.385,28.911z"/>
+						<path d="m348.612,158.684c-4.107-0.549-7.877,2.343-8.42,6.45-6.957,52.507-52.18,92.104-105.192,92.104-58.514,0-106.119-47.604-106.119-106.119s47.605-106.119 106.119-106.119c53.013,0 98.235,39.596 105.192,92.104 0.543,4.107 4.32,7.001 8.42,6.45 4.105-0.544 6.994-4.314 6.449-8.42-7.94-59.936-59.555-105.134-120.061-105.134-66.785,0-121.119,54.333-121.119,121.119s54.334,121.118 121.119,121.118c60.506,0 112.121-45.198 120.062-105.134 0.544-4.105-2.344-7.875-6.45-8.419z"/>
+					  </g>
+					</svg>
+				</div>
+				<p class="icon-name">Качество</p>
+				<p class="icon-text">Собственное производство. Мы лично отвечаем за качество тротуарной плитки.</p>
+			</div>
+			<div class="col-12 col-md-4 text-center mt-4 mb-4 ukladka diamond">
+				<div class="icon">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 0 33 33" xmlns:xlink="http://www.w3.org/1999/xlink" >
+					<g>
+						<path d="M16.5,30.5c-0.147,0-0.288-0.065-0.382-0.178l-16-19C-0.032,11.144-0.04,10.886,0.1,10.7l6-8
+							c0.094-0.126,0.243-0.2,0.4-0.2h20c0.157,0,0.306,0.074,0.4,0.2l6,8c0.14,0.186,0.132,0.444-0.018,0.622l-16,19
+							C16.788,30.435,16.647,30.5,16.5,30.5z M1.139,10.982L16.5,29.224l15.361-18.242L26.25,3.5H6.75L1.139,10.982z"/>
+						<path d="M32.5,11.5h-32C0.224,11.5,0,11.277,0,11s0.224-0.5,0.5-0.5h32c0.276,0,0.5,0.224,0.5,0.5S32.776,11.5,32.5,11.5z"/>
+						<path d="M16.5,30.5c-0.05,0-0.101-0.007-0.15-0.023c-0.264-0.083-0.41-0.364-0.326-0.627l6-19c0.083-0.263,0.366-0.411,0.627-0.326
+							c0.264,0.083,0.41,0.364,0.326,0.627l-6,19C16.91,30.364,16.712,30.5,16.5,30.5z"/>
+						<path d="M16.5,30.5c-0.212,0-0.41-0.136-0.477-0.35l-6-19c-0.083-0.263,0.063-0.544,0.326-0.627
+							c0.264-0.085,0.544,0.063,0.627,0.326l6,19c0.083,0.263-0.063,0.544-0.326,0.627C16.601,30.493,16.55,30.5,16.5,30.5z"/>
+						<path d="M10.5,11.5c-0.184,0-0.36-0.101-0.448-0.276l-4-8C5.929,2.977,6.029,2.677,6.276,2.553C6.524,2.43,6.823,2.53,6.947,2.777
+							l4,8c0.124,0.247,0.023,0.547-0.224,0.671C10.652,11.483,10.576,11.5,10.5,11.5z"/>
+						<path d="M10.5,11.5c-0.104,0-0.209-0.033-0.299-0.1c-0.221-0.166-0.266-0.479-0.1-0.7l6-8c0.166-0.221,0.479-0.265,0.7-0.1
+							c0.221,0.166,0.266,0.479,0.1,0.7l-6,8C10.802,11.431,10.652,11.5,10.5,11.5z"/>
+						<path d="M22.5,11.5c-0.152,0-0.302-0.069-0.4-0.2l-6-8c-0.166-0.221-0.121-0.534,0.1-0.7c0.22-0.167,0.534-0.122,0.7,0.1l6,8
+							c0.166,0.221,0.121,0.534-0.1,0.7C22.71,11.468,22.605,11.5,22.5,11.5z"/>
+						<path d="M22.5,11.5c-0.075,0-0.151-0.017-0.223-0.053c-0.247-0.124-0.347-0.424-0.224-0.671l4-8
+							c0.124-0.247,0.423-0.347,0.671-0.224c0.247,0.124,0.347,0.424,0.224,0.671l-4,8C22.859,11.399,22.683,11.5,22.5,11.5z"/>
+					</g>
+					</svg>
+				</div>
+				<p class="icon-name">Опыт</p>
+				<p class="icon-text">Компания Еврострой на рынке Калининградской области более 20 лет.</p>
+			</div>
+			<div class="col-12 col-md-4 text-center mt-4 mb-4 ukladka shield">
+				<div class="icon">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 0 744.191 744.191" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<g>
+
+								<path d="M372.762,744.191l-4.216-0.676c-178.111-42.031-302.45-199.174-302.45-382.168v-255.57l12.406-0.554
+									C181.933,100.6,280.828,66.117,364.486,5.515L372.104,0l7.618,5.515c83.684,60.603,182.57,95.085,285.967,99.709l12.406,0.553
+									v255.579c0,182.994-124.348,340.136-302.39,382.152L372.762,744.191z M92.069,130.478v230.87
+									c0,170.084,115.015,316.259,280.019,356.309c165.021-40.067,280.036-186.232,280.036-356.309v-230.87
+									c-100.869-6.753-197.244-40.639-280.02-98.505C289.347,89.83,192.98,123.725,92.069,130.478z"/>
+								<path d="M372.528,644.934l-2.935-0.493c-130.348-30.744-221.425-145.828-221.425-279.855V177.678l8.268-0.373
+									c76.177-3.419,148.996-28.803,210.577-73.416l5.082-3.679l5.082,3.679c61.615,44.621,134.425,70.004,210.568,73.416l8.268,0.373
+									v186.907c0,134.019-91.077,249.103-221.477,279.872L372.528,644.934z M165.484,194.153v170.44
+									c0,125.432,84.878,233.208,206.603,262.652c121.785-29.522,206.612-137.267,206.612-262.652v-170.44
+									c-74.446-4.848-145.586-29.842-206.604-72.619C311.121,164.311,239.965,189.305,165.484,194.153z"/>
+								<path d="M430.033,347.149V314.9c0-31.297-25.308-56.811-56.379-56.811h-3.117c-31.072,0-56.326,25.514-56.326,56.811v32.249
+									h-20.596v141.81h156.943v-141.81H430.033z M335.977,314.891c0-19.176,15.514-34.786,34.561-34.786h3.117
+									c19.091,0,34.543,15.609,34.543,34.786v32.25h-72.221V314.891L335.977,314.891z"/>
+
+					</g>
+					</svg>
+				</div>
+				<p class="icon-name">Гарантия</p>
+				<p class="icon-text">Предоставляем гарантию на плитку и выполненные работы 5 лет.</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	
+	<!----------------------------------------------------------- ПОРТФОЛИО ----------------------------------------------->
+	<section id="portfolio">
+		<div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-4 col-6">
+          <a class="portfolio-box" href="photo/1.jpg">
+            <img class="img-fluid" src="photo/1.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-name">
+                Стадион на "Острове"
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-6">
+          <a class="portfolio-box" href="photo/2.jpg">
+            <img class="img-fluid" src="photo/2.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-name">
+                Рыбная деревня
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-6">
+          <a class="portfolio-box" href="photo/3.jpg">
+            <img class="img-fluid" src="photo/3.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-name">
+                Фестивальная аллея
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-6">
+          <a class="portfolio-box" href="photo/4.jpg">
+            <img class="img-fluid" src="photo/4.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-name">
+                Юбилейный мост
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-6">
+          <a class="portfolio-box" href="photo/5.jpg">
+            <img class="img-fluid" src="photo/5.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-name">
+                Частная территория
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-6">
+          <a class="portfolio-box" href="photo/6.jpg">
+            <img class="img-fluid" src="photo/6.jpg" alt="">
+            <div class="portfolio-box-caption p-3">
+              <div class="project-name">
+                Центральная площадь
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+	</section>
+	
+	<!----------------------------------------------------------- ОБРАТНАЯ СВЯЗЬ ----------------------------------------------->
+	<div id="fos" class="pt-4"><a id="callback"></a>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<span class="b-title">Обратная связь</span>
+			</div>
+		</div>
+		
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-8">
+				<div class="form-container">
+					<div class="note h4 text-center"></div>
+					<div class="fields">
+						<form class="ajax-contact-form" action="">
+							<div class="row">
+							  <div class="col-12 col-md-6 mb-3">
+								<input type="text" id="form-name" name="name" placeholder="Имя" class="form-control" required="required">
+							  </div>
+							  <div class="col-12 col-md-6 mb-3">
+								<input type="phone" id="form-phone" name="phone" class="form-control" placeholder="Телефон" required="required">
+							  </div>
+							  <div class="col-12 text-center mt-4" style="color:#999;">
+									<input type="checkbox" id="form-lic" name="lic" required="required">
+									Я согласен(на) на обратку <a class="btn-link btn-opd" data-toggle="modal" data-target="#opd">персональных данных</a>							
+							  </div>
+							  <div class="col-12 text-center mt-4">
+								<button type="sibmit" name="submit" class="button btn btn-orange btn-lg">Заказать</button>
+							  </div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!----------------------------------------------------------- КОНТАКТЫ ----------------------------------------------->
+	<section id="contacts" class="mt-5 pt-4">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-8">
+					<span class="b-title">Контакты</span>
+				</div>
+			</div>
+			<div class="row pb-md-5">
+				<div class="col-12 col-sm-6 col-lg-4 mb-3">
+					<address>
+						<p class="h4">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="35px" viewBox="-10 0 512.076 512.076">
+							<g transform="translate(-1 -1)">
+							<path d="M499.639,396.039l-103.646-69.12c-13.153-8.701-30.784-5.838-40.508,6.579l-30.191,38.818
+								c-3.88,5.116-10.933,6.6-16.546,3.482l-5.743-3.166c-19.038-10.377-42.726-23.296-90.453-71.04s-60.672-71.45-71.049-90.453
+								l-3.149-5.743c-3.161-5.612-1.705-12.695,3.413-16.606l38.792-30.182c12.412-9.725,15.279-27.351,6.588-40.508l-69.12-103.646
+								C109.12,1.056,91.25-2.966,77.461,5.323L34.12,31.358C20.502,39.364,10.511,52.33,6.242,67.539
+								c-15.607,56.866-3.866,155.008,140.706,299.597c115.004,114.995,200.619,145.92,259.465,145.92
+								c13.543,0.058,27.033-1.704,40.107-5.239c15.212-4.264,28.18-14.256,36.181-27.878l26.061-43.315
+								C517.063,422.832,513.043,404.951,499.639,396.039z M494.058,427.868l-26.001,43.341c-5.745,9.832-15.072,17.061-26.027,20.173
+								c-52.497,14.413-144.213,2.475-283.008-136.32S8.29,124.559,22.703,72.054c3.116-10.968,10.354-20.307,20.198-26.061
+								l43.341-26.001c5.983-3.6,13.739-1.855,17.604,3.959l37.547,56.371l31.514,47.266c3.774,5.707,2.534,13.356-2.85,17.579
+								l-38.801,30.182c-11.808,9.029-15.18,25.366-7.91,38.332l3.081,5.598c10.906,20.002,24.465,44.885,73.967,94.379
+								c49.502,49.493,74.377,63.053,94.37,73.958l5.606,3.089c12.965,7.269,29.303,3.898,38.332-7.91l30.182-38.801
+								c4.224-5.381,11.87-6.62,17.579-2.85l103.637,69.12C495.918,414.126,497.663,421.886,494.058,427.868z"/>
+							<path d="M291.161,86.39c80.081,0.089,144.977,64.986,145.067,145.067c0,4.713,3.82,8.533,8.533,8.533s8.533-3.82,8.533-8.533
+								c-0.099-89.503-72.63-162.035-162.133-162.133c-4.713,0-8.533,3.82-8.533,8.533S286.448,86.39,291.161,86.39z"/>
+							<path d="M291.161,137.59c51.816,0.061,93.806,42.051,93.867,93.867c0,4.713,3.821,8.533,8.533,8.533
+								c4.713,0,8.533-3.82,8.533-8.533c-0.071-61.238-49.696-110.863-110.933-110.933c-4.713,0-8.533,3.82-8.533,8.533
+								S286.448,137.59,291.161,137.59z"/>
+							<path d="M291.161,188.79c23.552,0.028,42.638,19.114,42.667,42.667c0,4.713,3.821,8.533,8.533,8.533s8.533-3.82,8.533-8.533
+								c-0.038-32.974-26.759-59.696-59.733-59.733c-4.713,0-8.533,3.82-8.533,8.533S286.448,188.79,291.161,188.79z"/>
+							</g>
+						</svg>
+						Отдел продаж</p>
+						<p><a href="tel:+74012379060">8 (4012) 37-90-60</a></p>
+						<p><a href="tel:+79062130097">8 (9062) 13-00-97</a></p>
+						<p>Калининградская область<br>пос. Рыбное</p>
+					</address>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 mb-3">
+					<address>
+						<p class="h4">
+						<svg version="1.1"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="35px" viewBox="0 0 54.757 54.757">
+							<g>
+							<path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5 s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"/>
+							<path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+								L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+								C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+								C45.576,13.08,46.321,24.468,41.099,31.431z"/>
+							</g>
+						</svg>
+						Офис компании</p>
+						<p><a href="tel:+74012510920">8 (4012) 51-09-20</a></p>
+						<p>eurostroy039@mail.ru</p>
+						<p>г. Калининград<br>ул. Толбухина, 20</p>
+					</address>
+				</div>
+				<div class="col-12 col-lg-4 mb-3">
+					<address>
+						<p class="h4">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="35px" viewBox="0 0 516.375 516.375">
+						<g>
+							<path d="M325.125,0h-9.562H114.75C93.712,0,76.5,17.212,76.5,38.25v439.875c0,21.037,17.212,38.25,38.25,38.25h286.875
+								c21.037,0,38.25-17.213,38.25-38.25V143.438v-9.562L325.125,0z M325.125,28.688l89.888,105.188H344.25
+								c-9.562,0-19.125-9.562-19.125-19.125V28.688z M420.75,478.125c0,9.562-7.65,19.125-19.125,19.125H114.75
+								c-9.562,0-19.125-7.65-19.125-19.125V38.25c0-9.562,7.65-19.125,19.125-19.125H306v95.625c0,21.038,17.213,38.25,38.25,38.25h76.5
+								V478.125z"/>
+						</g>
+						</svg>
+
+						ООО «ЕВРОСТРОЙ»</p>
+						<p>ИНН 3905073219</p>
+						<p>КПП 390601001</p>
+						<p>Скачать прайс-лист<br><a href="#calculator" role="button">Расчет стоимости плитки</a></p>
+					</address>
+				</div>
+			</div>
+			<div class="row pb-3">
+				<div class="col-12 col-lg-9 footer pb-3">
+					Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. Для получения подробной информации о наличии и стоимости указанных товаров и (или) услуг, пожалуйста, обращайтесь к менеджерам отдела продаж с помощью специальной формы обратной связи или по телефону: 8(4012)37-90-60.
+				</div>
+				<div class="col-12 col-lg-3 copyright text-center">
+					© 2001 - <script>document.write((new Date()).getFullYear());</script> eurostroy039.ru<br>
+					разработка сайта <a target="_blank" rel="nofollow noopener noreferrer" href="http://blogmax.ru">blogmax.ru</a>		
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!----------------------------------------------------------- МОДАЬНЫЕ ОКНА ----------------------------------------------->
+	<div class="modal fade bd-example-modal-lg" id="kirpich6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalCenterTitle">Тротуарная плитка "Кирпич" 6см</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<div class="row">
+				<div class="col-12 col-md-6"><img src="img/kirpich_grey6.jpg" class="img-fluid" alt="Тротуарная плитка Кирпич, 60мм"></div>
+				<div class="col-12 col-md-6">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold" colspan="3">Цена за 1 м<sup>2</sup></td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td><img src="img/grey.jpg" alt="Серый" title="Серый" width="40"></td>
+							<td>Серая</td>
+							<td class="colour-price">310 руб.</td>
+						</tr>
+						<tr>
+							<td><img src="img/red.jpg" alt="Красный" title="Красный" width="40"></td>
+							<td>Красная</td>
+							<td class="colour-price">380 руб.</td>
+						</tr>
+						<tr>
+							<td><img src="img/black.jpg" alt="Черный" title="Черный" width="40"></td>
+							<td>Черная</td>
+							<td class="colour-price">400 руб.</td>
+						</tr>
+						<tr>
+							<td><img src="img/yellow.jpg" alt="Желтый" title="Желтый" width="40"></td>
+							<td>Желтая</td>
+							<td class="colour-price">450 руб.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-5 mt-3">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold" colspan="2">Характеристики</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Марка бетона</td>
+							<td>М300-В22.5</td>
+						</tr>
+						<tr>
+							<td>Размеры</td>
+							<td>200х100х60 мм.</td>
+						</tr>
+						<tr>
+							<td>Кол-во в 1 м<sup>2</sup></td>
+							<td>50 шт.</td>
+						</tr>
+						<tr>
+							<td>Кол-во в поддоне</td>
+							<td>9.6 м<sup>2</sup></td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-12 col-md-6 offset-md-1 mt-3">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold">Описание</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="text-justify">Дорожная плитка «Кирпич» - универсальное решение для благоустройства любой территории. Плитка имеет толщину 6 см и изготовлена из высокопрочного бетона. Более 50% городских улиц и парковок покрыты именно этой универсальной плиткой.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		  </div>
+		  <div class="modal-footer d-block d-md-none text-center">
+			<button type="button" class="btn btn-light" data-dismiss="modal">Назад</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="modal fade bd-example-modal-lg" id="kirpich8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalCenterTitle">Тротуарная плитка "Кирпич" 8см</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<div class="row">
+				<div class="col-12 col-md-6"><img src="img/kirpich_grey8.jpg" class="img-fluid" alt="Тротуарная плитка Кирпич, 80мм"></div>
+				<div class="col-12 col-md-6">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold" colspan="3">Цена за 1 м<sup>2</sup></td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td><img src="img/grey.jpg" alt="Серый" title="Серый" width="40"></td>
+							<td>Серая</td>
+							<td class="colour-price">380 руб.</td>
+						</tr>
+						<tr>
+							<td><img src="img/red.jpg" alt="Красный" title="Красный" width="40"></td>
+							<td>Красная</td>
+							<td class="colour-price">460 руб.</td>
+						</tr>
+						<tr>
+							<td><img src="img/black.jpg" alt="Черный" title="Черный" width="40"></td>
+							<td>Черная</td>
+							<td class="colour-price">480 руб.</td>
+						</tr>
+						<tr>
+							<td><img src="img/yellow.jpg" alt="Желтый" title="Желтый" width="40"></td>
+							<td>Желтая</td>
+							<td class="colour-price">550 руб.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-5 mt-3">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold" colspan="2">Характеристики</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Марка бетона</td>
+							<td>М300-В22.5</td>
+						</tr>
+						<tr>
+							<td>Размеры</td>
+							<td>200х100х80 мм.</td>
+						</tr>
+						<tr>
+							<td>Кол-во в 1 м<sup>2</sup></td>
+							<td>50 шт.</td>
+						</tr>
+						<tr>
+							<td>Кол-во в поддоне</td>
+							<td>7.68 м<sup>2</sup></td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-12 col-md-6 offset-md-1 mt-3">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold">Описание</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="text-justify">Дорожная плитка «Кирпич» - универсальное решение для благоустройства любой территории. Плитка имеет толщину 8 см и изготовлена из высокопрочного бетона. Более 50% городских улиц и парковок покрыты именно этой универсальной плиткой.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		  </div>
+		  <div class="modal-footer d-block d-md-none text-center">
+			<button type="button" class="btn btn-light" data-dismiss="modal">Назад</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+    <div class="modal fade bd-example-modal-lg" id="kirpich10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalCenterTitle">Тротуарная плитка "Кирпич" 10см</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<div class="row">
+				<div class="col-12 col-md-6"><img src="img/kirpich_grey10.jpg" class="img-fluid" alt="Тротуарная плитка Кирпич, 100мм"></div>
+				<div class="col-12 col-md-6">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold" colspan="3">Цена за 1 м<sup>2</sup></td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td><img src="img/grey.jpg" alt="Серый" title="Серый" width="40"></td>
+							<td>Серая</td>
+							<td class="colour-price">470 руб.</td>
+						</tr>
+						<tr>
+							<td><img src="img/red.jpg" alt="Красный" title="Красный" width="40"></td>
+							<td>Красная</td>
+							<td class="colour-price">580 руб.</td>
+						</tr>
+						<tr>
+							<td><img src="img/black.jpg" alt="Черный" title="Черный" width="40"></td>
+							<td>Черная</td>
+							<td class="colour-price">600 руб.</td>
+						</tr>
+						<tr>
+							<td><img src="img/yellow.jpg" alt="Желтый" title="Желтый" width="40"></td>
+							<td>Желтая</td>
+							<td class="colour-price">670 руб.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-5 mt-3">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold" colspan="2">Характеристики</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Марка бетона</td>
+							<td>М300-В22.5</td>
+						</tr>
+						<tr>
+							<td>Размеры</td>
+							<td>200х100х100 мм.</td>
+						</tr>
+						<tr>
+							<td>Кол-во в 1 м<sup>2</sup></td>
+							<td>50 шт.</td>
+						</tr>
+						<tr>
+							<td>Кол-во в поддоне</td>
+							<td>5.76 м<sup>2</sup></td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-12 col-md-6 offset-md-1 mt-3">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold">Описание</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="text-justify">Дорожная плитка «Кирпич» - универсальное решение для благоустройства любой территории. Плитка имеет толщину 10 см и изготовлена из высокопрочного бетона. Более 50% городских улиц и парковок покрыты именно этой универсальной плиткой.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		  </div>
+		  <div class="modal-footer d-block d-md-none text-center">
+			<button type="button" class="btn btn-light" data-dismiss="modal">Назад</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="modal fade bd-example-modal-lg" id="katushka6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalCenterTitle">Тротуарная плитка "Катушка" 6см</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<div class="row">
+				<div class="col-12 col-md-6"><img src="img/katushka_grey6.jpg" class="img-fluid" alt="Тротуарная плитка Катушка, 60мм"></div>
+				<div class="col-12 col-md-6">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold" colspan="3">Цена за 1 м<sup>2</sup></td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td><img src="img/grey.jpg" alt="Серый" title="Серый" width="40"></td>
+							<td>Серая</td>
+							<td class="colour-price">330 руб.</td>
+						</tr>
+						<tr>
+							<td><img src="img/red.jpg" alt="Красный" title="Красный" width="40"></td>
+							<td>Красная</td>
+							<td class="colour-price">400 руб.</td>
+						</tr>
+						<tr>
+							<td><img src="img/black.jpg" alt="Черный" title="Черный" width="40"></td>
+							<td>Черная</td>
+							<td class="colour-price">420 руб.</td>
+						</tr>
+						<tr>
+							<td><img src="img/yellow.jpg" alt="Желтый" title="Желтый" width="40"></td>
+							<td>Желтая</td>
+							<td class="colour-price">470 руб.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-5 mt-3">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold" colspan="2">Характеристики</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Марка бетона</td>
+							<td>М300-В22.5</td>
+						</tr>
+						<tr>
+							<td>Размеры</td>
+							<td>250х150х60 мм.</td>
+						</tr>
+						<tr>
+							<td>Кол-во в 1 м<sup>2</sup></td>
+							<td>36 шт.</td>
+						</tr>
+						<tr>
+							<td>Кол-во в поддоне</td>
+							<td>8.57 м<sup>2</sup></td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-12 col-md-6 offset-md-1 mt-3">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold">Описание</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="text-justify">Катушка — вторая по популярности форма фигурной тротуарной плитки. Она проста и удобна в укладке. Характерной особенностью «катушки» является уникальное свойство самостягивания (нерасхождения) на различных видах грунта и при различных видах мощения.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		  </div>
+		  <div class="modal-footer d-block d-md-none text-center">
+			<button type="button" class="btn btn-light" data-dismiss="modal">Назад</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="modal fade bd-example-modal-lg" id="gorod6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalCenterTitle">Тротуарная плитка "Старый город" 6см</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<div class="row">
+				<div class="col-12 col-md-6"><img src="img/staryi-gorod.jpg" class="img-fluid" alt="Тротуарная плитка Старый город в Калининграде, 60мм"></div>
+				<div class="col-12 col-md-6">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold" colspan="3">Цена за 1 м<sup>2</sup></td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td><img src="img/grey.jpg" alt="Серый" title="Серый" width="40"></td>
+							<td>Серая</td>
+							<td class="colour-price">340 руб.</td>
+						</tr>
+						<tr>
+							<td><img src="img/red.jpg" alt="Красный" title="Красный" width="40"></td>
+							<td>Красная</td>
+							<td class="colour-price">410 руб.</td>
+						</tr>
+						<tr>
+							<td><img src="img/black.jpg" alt="Черный" title="Черный" width="40"></td>
+							<td>Черная</td>
+							<td class="colour-price">430 руб.</td>
+						</tr>
+						<tr>
+							<td><img src="img/yellow.jpg" alt="Желтый" title="Желтый" width="40"></td>
+							<td>Желтая</td>
+							<td class="colour-price">480 руб.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-5 mt-3">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold" colspan="2">Характеристики</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Марка бетона</td>
+							<td>М300-В22.5</td>
+						</tr>
+						<tr>
+							<td>Размеры</td>
+							<td>зависят от типа</td>
+						</tr>
+						<tr>
+							<td>Кол-во в 1 м<sup>2</sup></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>Кол-во в поддоне</td>
+							<td>9.2 м<sup>2</sup></td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-12 col-md-6 offset-md-1 mt-3">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold">Описание</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="text-justify">Такая плитка используется при благоустройстве небольших приусадебных участков, а также при мощении промышленных объектов. В случае промышленных объектов используется марка бетона M400.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		  </div>
+		  <div class="modal-footer d-block d-md-none text-center">
+			<button type="button" class="btn btn-light" data-dismiss="modal">Назад</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="modal fade bd-example-modal-lg" id="porebrik" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalCenterTitle">Поребрик тротуарный</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<div class="row">
+				<div class="col-12 col-md-6"><img src="img/porebrik.jpg" class="img-fluid" alt="Производство поребрика тротуарного в Калининграде"></div>
+				<div class="col-12 col-md-6">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold" colspan="3">Цена за 1 м.п.</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td><img src="img/grey.jpg" alt="Серый" title="Серый" width="40"></td>
+							<td>Серый</td>
+							<td class="colour-price">160 руб.</td>
+						</tr>
+						<tr>
+							<td><img src="img/red.jpg" alt="Красный" title="Красный" width="40"></td>
+							<td>Красный</td>
+							<td class="colour-price">200 руб.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-5 mt-3">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold" colspan="2">Характеристики</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Размеры</td>
+							<td>1000х200х80 мм.</td>
+						</tr>
+						<tr>
+							<td>Кол-во в поддоне</td>
+							<td>28 м</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-12 col-md-6 offset-md-1 mt-3">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold">Описание</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="text-justify">Бортовой камень тротуарный или тротуарный поребрик-усиленный. Бетон М300.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		  </div>
+		  <div class="modal-footer d-block d-md-none text-center">
+			<button type="button" class="btn btn-light" data-dismiss="modal">Назад</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="modal fade bd-example-modal-lg" id="bordur15" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalCenterTitle">Бордюр тротуарный 15 см</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<div class="row">
+				<div class="col-12 col-md-6"><img src="img/bordur.jpg" class="img-fluid" alt="Бордюр тротуарный в Калининграде 15 см."></div>
+				<div class="col-12 col-md-6">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold" colspan="3">Цена за 1 м.п.</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td><img src="img/grey.jpg" alt="Серый" title="Серый" width="40"></td>
+							<td>Серый</td>
+							<td class="colour-price">280 руб.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-5 mt-3">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold" colspan="2">Характеристики</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Размеры</td>
+							<td>1000х300х150 мм.</td>
+						</tr>
+						<tr>
+							<td>Кол-во в поддоне</td>
+							<td>16 м</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-12 col-md-6 offset-md-1 mt-3">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold">Описание</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="text-justify">Бортовой камень дорожный, выпускается согласно ГОСТ 6665-91 "Камни бортовые бетонные неармированные". Бетон М300/М400. Для придомовых проездов и дорог.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		  </div>
+		  <div class="modal-footer d-block d-md-none text-center">
+			<button type="button" class="btn btn-light" data-dismiss="modal">Назад</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="modal fade bd-example-modal-lg" id="bordur18" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalCenterTitle">Бордюр тротуарный 18 см</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<div class="row">
+				<div class="col-12 col-md-6"><img src="img/bordur.jpg" class="img-fluid" alt="Бордюр тротуарный в Калининграде 18 см."></div>
+				<div class="col-12 col-md-6">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold" colspan="3">Цена за 1 м.п.</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td><img src="img/grey.jpg" alt="Серый" title="Серый" width="40"></td>
+							<td>Серый</td>
+							<td class="colour-price">360 руб.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-5 mt-3">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold" colspan="2">Характеристики</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Размеры</td>
+							<td>1000х300х180 мм.</td>
+						</tr>
+						<tr>
+							<td>Кол-во в поддоне</td>
+							<td>12 м</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-12 col-md-6 offset-md-1 mt-3">
+					<table class="table table-sm">
+						<thead class="table-light">
+							<tr><td class="font-weight-bold">Описание</td></tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="text-justify">Бортовой камень дорожный, выпускается согласно ГОСТ 6665-91 "Камни бортовые бетонные неармированные". Бетон М300/М400. Для придомовых проездов и дорог.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		  </div>
+		  <div class="modal-footer d-block d-md-none text-center">
+			<button type="button" class="btn btn-light" data-dismiss="modal">Назад</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="modal fade bd-example-modal-lg" id="opd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+	  <div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Соглашение об обработке персональных данных</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">×</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			Настоящее пользовательское соглашение является публичной офертой (то есть предложением заключить соглашение).
+			<br><br>
+			Нажимая кнопки «Получить коммерческое предложение», «Зарегистрироваться», «Отправить заявку»,&nbsp;«Отправить сообщение»,&nbsp;«Заказать обратный звонок» и другие кнопки для отправки данных форм,&nbsp;Вы считаетесь присоединившимся к нему.
+			<br><br>
+			<p class="h5">Соглашение об обработке персональных данных</p>
+			<br>
+			При изменении законодательства, Соглашение может подвергаться изменениям.
+			<br><br>
+			Если вы считаете, что Соглашение или Администрации Сайта нарушает ваши права, сообщите об этом по электронному адресу: eurostroy039@mail.ru
+			<br><br>
+			<p class="h5">1. Термины, применяемые в настоящем Соглашении:</p>
+			<br>
+			1.1. Сайт – это совокупность текстов, графических элементов, дизайна, изображений, программного кода, фото- и видеоматериалов и иных результатов интеллектуальной деятельности, содержащихся в сети Интернет под доменным именем gk-osnova.com
+			<br><br>
+			1.2. Администрация Сайта – это лицо, обладающее правами администрирования Сайта.
+			<br><br>
+			1.3. Пользователь – это любое лицо, осуществившее вход на Сайт и принявшее условия настоящего Соглашения, независимо от факта прохождения процедур регистрации и авторизации.
+			<br><br>
+			<p class="h5">2. Использование персональных данных</p>
+			<br>
+			2.1. Принимая условия настоящего соглашения, Пользователь предоставляет Администрации Сайта согласие на обработку своих персональных данных.
+			<br><br>
+			2.2. Цель обработки персональных данных: выполнение Администрацией обязательств перед Пользователем в рамках настоящего Соглашения, продвижение товаров и услуг, клиентская поддержка.
+			<br><br>
+			2.3. Обработке подлежат следующие персональные данные:
+			<br>
+			2.3.1. Имя пользователя;
+			<br>
+			2.3.2. Номер телефона Пользователя.
+			<br><br>
+			2.4. Под обработкой персональных данных подразумевается следующий перечень действий с персональными данными: сбор, запись, систематизация, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление доступа), обезличивание, блокирование, удаление, уничтожение персональных данных.
+			<br><br>
+			2.5. Персональные данные получаются в связи с заключением договора, стороной которого является субъект персональных данных. Персональные данные не распространяются, а также не предоставляются третьим лицам без согласия субъекта персональных данных и используются оператором исключительно для исполнения указанного соглашения и заключения договоров с субъектом персональных данных.
+			<br><br>
+			2.6. Администрация имеет право отправлять информационные, в том числе рекламные сообщения, на электронную почту и мобильный телефон Пользователя с его согласия, выраженного посредством совершения им действий, однозначно идентифицирующих этого абонента и позволяющих достоверно установить его волеизъявление на получение сообщения. Пользователь вправе отказаться от получения рекламной и другой информации без объяснения причин отказа путем информирования Администрации о своем отказе по любому телефону, указанному на Сайте, либо посредством направления соответствующего заявления на любой электронный адрес, указанный на Сайте. Сервисные сообщения, информирующие Пользователя о заказе и этапах его обработки, отправляются автоматически и не могут быть отклонены Пользователем.
+			<br><br>
+			2.7. Данное согласие на обработку персональных данных действует бессрочно, но может быть отозвано субъектом персональных данных на основании личного заявления, направленного по электронной почте Администрации Сайта.
+			<br><br>
+			2.8. Администрация Сайта обязуется использовать персональные данные Пользователя, полученные в результате использования Сайта в соответствии с требованиями законодательства о защите персональных данных, в том числе федерального закона № 152-ФЗ от 22.02.2017 «О персональных данных» в редакции, действующей на момент обработки таких персональных данных.
+
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	
+	
+	<script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/contactform.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		var $page = $('html, body');
+		$('a[href*="#"]').click(function() {
+		$page.animate({
+			scrollTop: $($.attr(this, 'href')).offset().top
+		}, 800);
+		return false;
+		});
+    </script>
+	
+	<script>
+		$('.nav-js').click(function() {
+			$('.navbar-collapse').collapse('hide');
+		});
+	</script>
+	
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+	<script>
+	    $('#portfolio').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Loading image #%curr%...',
+    mainClass: 'mfp-img-mobile',
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0, 1]
+    },
+    image: {
+      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+    }
+  });
+	</script>
+		<script>
+	var $page = $('html, body');
+    $('a[href*="#callback"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 800);
+    $('#form-name').focus();
+    return false;
+});
+    </script>
+  </body>
+</html>

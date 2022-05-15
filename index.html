@@ -4,25 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Портфолио Максима Белогурова</title>
-    <link href="./src/svg/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="./src/svg/favicon.svg" rel="icon" type="image/svg+xml"/>
     <link rel="stylesheet" href="./dist/style.css">
 </head>
 <body>
-<div class="container my-4">
-    <h1>Портфолио Максима Белогурова</h1>
-    <p>Подробнее обо мне можно узнать на странице <a href="https://maxbelogurov.github.io/portfolio/cv" target="_blank" title="CV Максима Белогурова">CV</a></p>
-</div>
-<div class="container my-5">
+<header class="container my-4">
+    <div class="row align-items-center">
+        <div class="col-12 col-md-11">
+            <h1>Портфолио Максима Белогурова</h1>
+            <p>Подробнее обо мне можно узнать на странице <a class="btn btn-sm btn-outline-secondary" href="./cv"
+                                                             target="_blank" title="CV Максима Белогурова">CV</a></p>
+        </div>
+        <div class="col-12 col-md-1 text-end">
+            <button class="btn btn-outline-secondary example-popover" data-bs-toggle="popover"
+                    data-bs-placement="bottom" data-bs-trigger="focus" title="Конакты"
+                    data-bs-content="And here's some amazing content. It's very engaging. Right?">
+                <i class="bi bi-person-lines-fill"></i>
+            </button>
+        </div>
+
+    </div>
+</header>
+<section class="container my-5">
     <h2 class="mb-3 border-bottom">Vanilla JS</h2>
-    <a class="btn btn-outline-secondary" href="https://maxbelogurov.github.io/boots/" role="button">Product catalog</a>
-    <a class="btn btn-outline-secondary" href="/js_project/audio-player" role="button">Audio player</a>
-    <a class="btn btn-outline-secondary" href="/js_project/game-snake" role="button">Game Snake</a>
-    <a class="btn btn-outline-secondary" href="/js_project/image-gallery" role="button">Image gallery</a>
-</div>
-<div class="container my-5">
+    <a class="btn btn-outline-secondary mb-2" href="https://maxbelogurov.github.io/boots/" role="button">Product
+        catalog</a>
+    <a class="btn btn-outline-secondary mb-2" href="./js_project/audio-player" role="button">Audio player</a>
+    <a class="btn btn-outline-secondary mb-2" href="./js_project/game-snake" role="button">Game Snake</a>
+    <a class="btn btn-outline-secondary mb-2" href="./js_project/image-gallery" role="button">Image gallery</a>
+</section>
+<!--TODO: Layout-->
+<section class="container my-5">
+    <h2 class="mb-3 border-bottom">Верстка</h2>
+    <p>Сверстанные сайты 2019 года. Когда-то они были в интернете, но компании закрылись, поэтому сейчас их можно
+        посмотреть только с моего домена.</p>
+    <div class="row row-cols-1 row-cols-lg-3">
+        <!--layout-->
+        <div class="layout col mb-4">
+            <div class="layout-card bg-light p-3">
+                <div class="layout__logo mb-3">
+                    <img class="layout__logo-img" src="./src/img/logo-gmsynergy.svg"
+                         alt="Логотип Экономическая блокчейн-стратегия">
+                </div>
+                <h4>Блокчейн-стратегия</h4>
+                <p>OnePage на Bootstrap 4 под уникальный проект на рынке майнинга</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="layout-year"><i class="bi bi-calendar3"></i> 2019</div>
+                    <a href="./pages/gmsynergy" class="btn btn-outline-info"><i class="bi bi-eye"></i> Смотреть</a>
+                </div>
+            </div>
+        </div>
+        <!--layout-->
+        <div class="layout col mb-4">
+            <div class="layout-card bg-light p-3">
+                <div class="layout__logo mb-3">
+                    <img class="layout__logo-img" src="./src/img/logo-yourtravel.svg" alt="Логотип Твоё путешествие">
+                    <span class="fs-3 ms-3">Your travel</span>
+                </div>
+                <h4>Твоё путешествие</h4>
+                <p>Одностраничный сайта с индивидуальным дизайном и JS калькулятором</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="layout-year"><i class="bi bi-calendar3"></i> 2019</div>
+                    <a href="./pages/yourtravel" class="btn btn-outline-info"><i class="bi bi-eye"></i> Смотреть</a>
+                </div>
+            </div>
+        </div>
+        <!--layout-->
+        <div class="layout col mb-4">
+            <div class="layout-card bg-light p-3">
+                <div class="layout__logo mb-3">
+                    <img class="layout__logo-img" src="./src/img/logo-eurostroy.svg" alt="Логотип Еврострой">
+                    <span class="fs-3 ms-3">Еврострой</span>
+                </div>
+                <h4>Еврострой</h4>
+                <p>OnePage с калькулятором расчет стоимости укладки тротуарной плитки </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="layout-year"><i class="bi bi-calendar3"></i> 2018</div>
+                    <a href="./pages/eurostroy" class="btn btn-outline-info"><i class="bi bi-eye"></i> Смотреть</a>
+                </div>
+            </div>
+        </div>
+        <!--layout-->
+        <div class="layout col mb-4">
+            <div class="layout-card bg-light p-3">
+                <div class="layout__logo mb-3">
+                    <img class="layout__logo-img" src="./src/img/logo-homedessert.png"
+                         alt="Логотип Кондитерской Home Desert">
+                    <span class="fs-3 ms-3">Home Desert</span>
+                </div>
+                <h4>Кондитерская Home Desert</h4>
+                <p>Сайт каталог на Bootstrap без backend для небольшой кондитеской</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="layout-year"><i class="bi bi-calendar3"></i> 2016</div>
+                    <a href="./pages/homedessert" class="btn btn-outline-info"><i class="bi bi-eye"></i> Смотреть</a>
+                </div>
+            </div>
+        </div>
+        <!--layout-->
+        <!--layout-->
+        <!--layout-->
+    </div>
+</section>
+<!--TODO: WebSite-->
+<section class="container my-5">
     <h2 class="mb-3 border-bottom">Сайты</h2>
-    <p>Коммерческие проекты 2017-19 годов, полностью разработанные мною лично. Сайтов было значительно больше, представленны только те, которые продолжают существовать по сей день. В настоящее время, обслуживание данных проектов передано другим компаниям.</p>
+    <p>Коммерческие проекты 2017-19 годов, полностью разработанные мною лично. Сайтов было значительно больше,
+        представленны только те, которые продолжают существовать по сей день. В настоящее время, обслуживание данных
+        проектов передано другим компаниям.</p>
     <div class="row">
+        <!--website-->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-4">
+                <img src="./src/img/blogmax.jpg" class="card-img-top border-bottom" alt="Конструктор халатов">
+                <div class="card-body">
+                    <h5 class="card-title">Моя web-студия</h5>
+                    <p class="card-subtitle mb-2 text-muted">Joomla, BootStrap, JS</p>
+                    <p class="card-text">Во времена "свободного плавания" для привлечения клиентов создал сайт своей
+                        web-студии</p>
+                    <a href="http://blogmax.ru/" target="_blank" class="btn btn-outline-info">blogmax.ru <i
+                            class="bi bi-arrow-up-right-circle"></i></a>
+                </div>
+            </div>
+        </div>
         <!--website-->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card mb-4">
@@ -30,8 +133,10 @@
                 <div class="card-body">
                     <h5 class="card-title">Конструктор халатов</h5>
                     <p class="card-subtitle mb-2 text-muted">Битрикс, JS</p>
-                    <p class="card-text">Магазин на платформе 1С Битрикс с конструктором дизайна халатов на чистом JS.</p>
-                    <a href="https://mdecor.ru/" target="_blank" class="btn btn-outline-info">mdecor.ru</a>
+                    <p class="card-text">Магазин на платформе 1С Битрикс с конструктором дизайна халатов на чистом
+                        JS</p>
+                    <a href="https://mdecor.ru/" target="_blank" class="btn btn-outline-info">mdecor.ru <i
+                            class="bi bi-arrow-up-right-circle"></i></a>
                 </div>
             </div>
         </div>
@@ -42,20 +147,24 @@
                 <div class="card-body">
                     <h5 class="card-title">Каталог Dunlop boots</h5>
                     <p class="card-subtitle mb-2 text-muted">Joomla, Bootstrap</p>
-                    <p class="card-text">Каталог на платформе CMS Joomla в фирменном стиле компании. Верстка на Bootstrap</p>
-                    <a href="http://dunlopboots.ru/" target="_blank" class="btn btn-outline-info">dunlopboots.ru</a>
+                    <p class="card-text">Каталог на платформе CMS Joomla в фирменном стиле компании. Верстка на
+                        Bootstrap</p>
+                    <a href="http://dunlopboots.ru/" target="_blank" class="btn btn-outline-info">dunlopboots.ru <i
+                            class="bi bi-arrow-up-right-circle"></i></a>
                 </div>
             </div>
         </div>
         <!--website-->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card mb-4">
-                <img src="./src/img/profi.jpg" class="card-img-top border-bottom" alt="Магазин спецодежды profi.express">
+                <img src="./src/img/profi.jpg" class="card-img-top border-bottom"
+                     alt="Магазин спецодежды profi.express">
                 <div class="card-body">
                     <h5 class="card-title">Магазин спецодежды</h5>
                     <p class="card-subtitle mb-2 text-muted">Битрикс, Интеграция с 1С</p>
                     <p class="card-text">Интернет-магазин сетевых магазинов спецодежды. Настроенная интеграция с 1С</p>
-                    <a href="https://profi.express/" target="_blank" class="btn btn-outline-info">profi.express</a>
+                    <a href="https://profi.express/" target="_blank" class="btn btn-outline-info">profi.express <i
+                            class="bi bi-arrow-up-right-circle"></i></a>
                 </div>
             </div>
         </div>
@@ -66,8 +175,10 @@
                 <div class="card-body">
                     <h5 class="card-title">Магазин мебели</h5>
                     <p class="card-subtitle mb-2 text-muted">Opencart + JS</p>
-                    <p class="card-text">Интернет-магазин ортопедической мебели. Разработан на Opencart + шаблон + JS</p>
-                    <a href="https://ergode.ru/" target="_blank" class="btn btn-outline-info">ergode.ru</a>
+                    <p class="card-text">Интернет-магазин ортопедической мебели. Разработан на Opencart + шаблон +
+                        JS</p>
+                    <a href="https://ergode.ru/" target="_blank" class="btn btn-outline-info">ergode.ru <i
+                            class="bi bi-arrow-up-right-circle"></i></a>
                 </div>
             </div>
         </div>
@@ -79,27 +190,137 @@
                     <h5 class="card-title">Компания грузоперевозок</h5>
                     <p class="card-subtitle mb-2 text-muted">OnePage</p>
                     <p class="card-text">Простой информативный сайт компании международных грузовых перевозок</p>
-                    <a href="http://www.megatir.com/" target="_blank" class="btn btn-outline-info">megatir.com</a>
+                    <a href="http://www.megatir.com/" target="_blank" class="btn btn-outline-info">megatir.com <i
+                            class="bi bi-arrow-up-right-circle"></i></a>
                 </div>
             </div>
         </div>
         <!--website-->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card mb-4">
-                <img src="./src/img/bbc-audit.jpg" class="card-img-top border-bottom" alt="Сайт компании грузоперевозок">
+                <img src="./src/img/bbc-audit.jpg" class="card-img-top border-bottom" alt="Аудиторская компания">
                 <div class="card-body">
                     <h5 class="card-title">Аудиторская компания</h5>
                     <p class="card-subtitle mb-2 text-muted">Joomla</p>
-                    <p class="card-text">Информационный сайт аудиторской компании. CMS Joomla + легкий дизайн.</p>
-                    <a href="https://bbc-audit.ru/" target="_blank" class="btn btn-outline-info">bbc-audit.ru</a>
+                    <p class="card-text">Информационный сайт аудиторской компании, CMS Joomla + легкий дизайн</p>
+                    <a href="https://bbc-audit.ru/" target="_blank" class="btn btn-outline-info">bbc-audit.ru <i
+                            class="bi bi-arrow-up-right-circle"></i></a>
                 </div>
             </div>
         </div>
         <!--website-->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-4">
+                <img src="./src/img/sacla.jpg" class="card-img-top border-bottom" alt="Каталог спецодежды SACLA">
+                <div class="card-body">
+                    <h5 class="card-title">Каталог спецодежды</h5>
+                    <p class="card-subtitle mb-2 text-muted">Битрикс, Интеграция с 1С</p>
+                    <p class="card-text">Каталог товаров для оптовых заказов спецодежды фирмы sacla. 1С Битрикс</p>
+                    <a href="https://sacla.ru/" target="_blank" class="btn btn-outline-info">sacla.ru <i
+                            class="bi bi-arrow-up-right-circle"></i></a>
+                </div>
+            </div>
+        </div>
         <!--website-->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-4">
+                <img src="./src/img/de-vintage.jpg" class="card-img-top border-bottom" alt="Магазин винтажных товаров">
+                <div class="card-body">
+                    <h5 class="card-title">Магазин винтажных товаров</h5>
+                    <p class="card-subtitle mb-2 text-muted">Opencart</p>
+                    <p class="card-text">Магазин на OpenCart и небольшими доработками в дизайне</p>
+                    <a href="https://de-vintage.ru/" target="_blank" class="btn btn-outline-info">de-vintage.ru <i
+                            class="bi bi-arrow-up-right-circle"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-
+</section>
+<!--TODO: Design-->
+<section class="container my-5 design">
+    <h2 class="mb-3 border-bottom">Дизайн</h2>
+    <p></p>
+    <div class="row row-cols-2 row-cols-lg-3 row-cols-lg-5">
+        <a class="design__link" data-fancybox="gallery" href="design/festool1.jpg">
+            <img class="img-thumbnail" src="design/thumb/festool1.jpg" alt="Festool главная">
+        </a>
+        <a class="design__link" data-fancybox="gallery" href="design/festool2.jpg">
+            <img class="img-thumbnail" src="design/thumb/festool2.jpg" alt="Festool каталог">
+        </a>
+        <a class="design__link" data-fancybox="gallery" href="design/balticuniversal1.jpg">
+            <img class="img-thumbnail" src="design/thumb/balticuniversal1.jpg" alt="Балтикуниверсал главная">
+        </a>
+        <a class="design__link" data-fancybox="gallery" href="design/balticuniversal2.jpg">
+            <img class="img-thumbnail" src="design/thumb/balticuniversal2.jpg" alt="Балтикуниверсал каталог">
+        </a>
+        <a class="design__link" data-fancybox="gallery" href="design/balticuniversal3.jpg">
+            <img class="img-thumbnail" src="design/thumb/balticuniversal3.jpg" alt="Балтикуниверсал товар">
+        </a>
+        <a class="design__link" data-fancybox="gallery" href="design/alatyr.jpg">
+            <img class="img-thumbnail" src="design/thumb/alatyr.jpg" alt="Алатырь">
+        </a>
+        <a class="design__link" data-fancybox="gallery" href="design/yellowsmile39.jpg">
+            <img class="img-thumbnail" src="design/thumb/yellowsmile39.jpg" alt="Жёлтый смайл">
+        </a>
+        <a class="design__link" data-fancybox="gallery" href="design/shop-thai-rai.jpg">
+            <img class="img-thumbnail" src="design/thumb/shop-thai-rai.jpg" alt="Shop Tai-Rai">
+        </a>
+        <a class="design__link" data-fancybox="gallery" href="design/myasooptom.jpg">
+            <img class="img-thumbnail" src="design/thumb/myasooptom.jpg" alt="Мясо оптом">
+        </a>
+        <a class="design__link" data-fancybox="gallery" href="design/myasorozn1.jpg">
+            <img class="img-thumbnail" src="design/thumb/myasorozn1.jpg" alt="Мясо розница главная">
+        </a>
+        <a class="design__link" data-fancybox="gallery" href="design/myasorozn2.jpg">
+            <img class="img-thumbnail" src="design/thumb/myasorozn2.jpg" alt="Мясо розница товар">
+        </a>
+        <a class="design__link" data-fancybox="gallery" href="design/zoo-plaza.jpg">
+            <img class="img-thumbnail" src="design/thumb/zoo-plaza.jpg" alt="Zoo Plaza">
+        </a>
+        <a class="design__link" data-fancybox="gallery" href="design/dss39.jpg">
+            <img class="img-thumbnail" src="design/thumb/dss39.jpg" alt="Дор Спец Строй">
+        </a>
+    </div>
+</section>
+<!--TODO: Skills -->
+<section class="container my-5 design mb-5 pb-5">
+    <h2 class="mb-3 border-bottom">Навыки!</h2>
+    <div id="skillsCarousel" class="carousel">
+        <div class="carousel__slide">
+            <svg><use xlink:href="./dist/sprite.svg#html"></use></svg>
+        </div>
+        <div class="carousel__slide">
+            <svg><use xlink:href="./dist/sprite.svg#css"></use></svg>
+        </div>
+        <div class="carousel__slide">
+            <svg><use xlink:href="./dist/sprite.svg#sass"></use></svg>
+        </div>
+        <div class="carousel__slide">
+            <svg><use xlink:href="./dist/sprite.svg#javascript"></use></svg>
+        </div>
+        <div class="carousel__slide">
+            <svg><use xlink:href="./dist/sprite.svg#webpack"></use></svg>
+        </div>
+        <div class="carousel__slide">
+            <svg><use xlink:href="./dist/sprite.svg#github"></use></svg>
+        </div>
+        <div class="carousel__slide">
+            <svg><use xlink:href="./dist/sprite.svg#bootstrap5"></use></svg>
+        </div>
+        <div class="carousel__slide">
+            <svg><use xlink:href="./dist/sprite.svg#1c_bitrix"></use></svg>
+        </div>
+        <div class="carousel__slide">
+            <svg><use xlink:href="./dist/sprite.svg#wordpress"></use></svg>
+        </div>
+        <div class="carousel__slide">
+            <svg><use xlink:href="./dist/sprite.svg#opencart"></use></svg>
+        </div>
+        <div class="carousel__slide">
+            <svg><use xlink:href="./dist/sprite.svg#joomla"></use></svg>
+        </div>
+    </div>
+</section>
 <script src="./dist/bundle.js"></script>
 </body>
 </html>

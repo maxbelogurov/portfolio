@@ -1,5 +1,6 @@
 const path = require('path');
-const miniCss = require('mini-css-extract-plugin')
+const miniCss = require('mini-css-extract-plugin');
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 module.exports = {
     mode: 'development',
     cache: false,
@@ -41,11 +42,27 @@ module.exports = {
                     filename: 'fonts/[name][ext]',
                 },
             },
+            {
+                test: /\.js$/,
+                enforce: 'pre',
+                use: ['source-map-loader'],
+            },
+            {
+                test: /\.svg$/,
+                loader: 'svg-sprite-loader',
+                options: {
+                    extract: true,
+                    publicPath: '/'
+                }
+            }
         ],
     },
     plugins: [
         new miniCss({
             filename: "style.css"
-        })
+        }),
+        new SpriteLoaderPlugin( {
+            filename: "sprite.svg"
+        }),
     ]
 };
