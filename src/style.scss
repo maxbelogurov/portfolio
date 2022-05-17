@@ -21,3 +21,22 @@ body {
 .design__link:hover .img-thumbnail {
   box-shadow:  0 .5rem 1rem rgba(0,0,0,.3);
 }
+.carousel {
+  .carousel__slide {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    svg {
+      height: 50%;
+    }
+    svg.skill_logo-name {
+      width: 70%;
+    }
+  }
+  @media screen and (max-width: 769px) {
+    .carousel__slide {
+      width: 50%;
+    }
+  }
+}

@@ -15,7 +15,7 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 });
 //init Carousel
 const myCarousel = new Carousel(document.querySelector("#skillsCarousel"), {
-
+    slidesPerPage: 1,
 });
 
 // add file to svg sprite

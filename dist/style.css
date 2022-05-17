@@ -23,6 +23,20 @@ body {
 .design__link:hover .img-thumbnail {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
 
+.carousel .carousel__slide {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .carousel .carousel__slide svg {
+    height: 50%; }
+  .carousel .carousel__slide svg.skill_logo-name {
+    width: 70%; }
+
+@media screen and (max-width: 769px) {
+  .carousel .carousel__slide {
+    width: 50%; } }
+
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/bootstrap/scss/bootstrap.scss ***!
   \*************************************************************************************************************************************/

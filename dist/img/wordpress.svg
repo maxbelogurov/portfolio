@@ -1,6 +1,6 @@
 export default {
       id: "wordpress-usage",
-      viewBox: "0 0 122.522 122.523",
+      viewBox: "0 0 540 122.523",
       url: "/" + "D:\\Portfolio\\portfolio\\src\\svg\\skills\\wordpress.svg",
       toString: function () {
         return this.url;

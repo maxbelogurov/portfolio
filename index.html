@@ -12,13 +12,15 @@
     <div class="row align-items-center">
         <div class="col-12 col-md-11">
             <h1>Портфолио Максима Белогурова</h1>
-            <p>Подробнее обо мне можно узнать на странице <a class="btn btn-sm btn-outline-secondary" href="./cv"
-                                                             target="_blank" title="CV Максима Белогурова">CV</a></p>
+            <p>Подробнее обо мне можно узнать на странице <a class="btn btn-sm btn-outline-secondary" href="./cv" target="_blank" title="CV Максима Белогурова">CV</a></p>
         </div>
         <div class="col-12 col-md-1 text-end">
             <button class="btn btn-outline-secondary example-popover" data-bs-toggle="popover"
-                    data-bs-placement="bottom" data-bs-trigger="focus" title="Конакты"
-                    data-bs-content="And here's some amazing content. It's very engaging. Right?">
+                    data-bs-placement="bottom" data-bs-trigger="focus" data-bs-html="true" title="Конакты"
+                    data-bs-content="
+                    <p><a class='link-info fs-6' href='https://t.me/maxbelogurov'>t.me/maxbelogurov</a></p>
+                    <p><a class='link-info fs-6' href='mailto:maxbelogurov@gmail.com'>maxbelogurov@gmail.com</a></p>
+                    ">
                 <i class="bi bi-person-lines-fill"></i>
             </button>
         </div>
@@ -284,7 +286,7 @@
 </section>
 <!--TODO: Skills -->
 <section class="container my-5 design mb-5 pb-5">
-    <h2 class="mb-3 border-bottom">Навыки!</h2>
+    <h2 class="mb-3 border-bottom">Навыки</h2>
     <div id="skillsCarousel" class="carousel">
         <div class="carousel__slide">
             <svg><use xlink:href="./dist/sprite.svg#html"></use></svg>
@@ -308,16 +310,16 @@
             <svg><use xlink:href="./dist/sprite.svg#bootstrap5"></use></svg>
         </div>
         <div class="carousel__slide">
-            <svg><use xlink:href="./dist/sprite.svg#1c_bitrix"></use></svg>
+            <svg class="skill_logo-name"><use xlink:href="./dist/sprite.svg#1c_bitrix"></use></svg>
         </div>
         <div class="carousel__slide">
-            <svg><use xlink:href="./dist/sprite.svg#wordpress"></use></svg>
+            <svg class="skill_logo-name"><use xlink:href="./dist/sprite.svg#wordpress"></use></svg>
         </div>
         <div class="carousel__slide">
-            <svg><use xlink:href="./dist/sprite.svg#opencart"></use></svg>
+            <svg class="skill_logo-name"><use xlink:href="./dist/sprite.svg#opencart"></use></svg>
         </div>
         <div class="carousel__slide">
-            <svg><use xlink:href="./dist/sprite.svg#joomla"></use></svg>
+            <svg class="skill_logo-name"><use xlink:href="./dist/sprite.svg#joomla"></use></svg>
         </div>
     </div>
 </section>
